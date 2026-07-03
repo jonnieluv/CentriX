@@ -1,0 +1,34 @@
+{
+  "entities": {
+    "Ticket": {
+      "title": "Ticket",
+      "description": "Represents a CRM ticket",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["id", "status"]
+    },
+    "Employee": {
+      "title": "Employee",
+      "description": "Represents an employee",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" }
+      },
+      "required": ["id", "name"]
+    }
+  },
+  "firestore": {
+    "/tickets/{ticketId}": {
+      "schema": { "$ref": "Ticket" },
+      "description": "CRM tickets"
+    },
+    "/employees/{employeeId}": {
+      "schema": { "$ref": "Employee" },
+      "description": "Company employees"
+    }
+  }
+}

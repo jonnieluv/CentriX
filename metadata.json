@@ -1,0 +1,6 @@
+{
+  "name": "CentriX",
+  "description": "CentriX is a robust, self-hosted multi-departmental CRM featuring integrated sales desks, tickets routing, mock communication channels, a digital switchboard, and background AI auditing.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
